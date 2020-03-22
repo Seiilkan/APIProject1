@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="5.499">
+    <testcase classname="Validate the Get request for List of Users" name="Validate Get request for List Resources returns status code 200" time="2.594">
+        <system-out>
+            <![CDATA[Given constucted Http client with parameters................................passed
+And I set custom headers....................................................passed
+When the user sends Get request.............................................passed
+Then validates the status code is 200.......................................passed
+And I validate the header is "application/json".............................passed
+And I validate response contains attributes:................................passed
+And I validate response attributes and values:..............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Validate the Get request for List of Users" name="Validate Get request for List Resources returns status code 500" time="0.238">
+        <failure message="expected:&lt;500&gt; but was:&lt;200&gt;" type="java.lang.AssertionError">
+            <![CDATA[Given constucted Http client with parameters................................passed
+And I set custom headers....................................................passed
+When the user sends Get request.............................................passed
+Then validates the status code is 500.......................................failed
+And I validate the header is "application/json".............................skipped
+And I validate response contains attributes:................................skipped
+
+StackTrace:
+java.lang.AssertionError: expected:<500> but was:<200>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at API.StepDefs.validates_the_status_code_is(StepDefs.java:62)
+	at ✽.validates the status code is 500(file:///Users/Seilkhan/Documents/API/src/test/resources/ListOfResources.feature:30)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Validate the Get request for List of Users" name="Validate Get request for List of Users returns status code 200" time="0.399">
+        <system-out>
+            <![CDATA[Given constucted Http client with parameters................................passed
+And I set custom headers....................................................passed
+When the user sends Get request.............................................passed
+Then validates the status code is 200.......................................passed
+And I validate the header is "application/json".............................passed
+And I validate response contains attributes:................................passed
+And I validate response attributes and values:..............................passed
+And validate the data of first user.........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Validate the Get request for Single Resource" name="Validate Get request for Single Resource returns status code 200" time="0.214">
+        <system-out>
+            <![CDATA[Given constucted Http client with parameters................................passed
+And I set custom headers....................................................passed
+When the user sends Get request.............................................passed
+Then validates the status code is 200.......................................passed
+And I validate the header is "application/json".............................passed
+And I validate response contains attributes:................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Validate the Get request for Single Resource" name="Validate Get request for Single Resource returns status code 200 2" time="0.278">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[Given constucted Http client with parameters................................passed
+And I set custom headers....................................................passed
+When the user sends Get request.............................................passed
+Then validates the status code is 200.......................................passed
+And I validate the header is "application/xml"..............................failed
+And I validate response contains attributes:................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at API.StepDefs.i_validate_the_header_is(StepDefs.java:67)
+	at ✽.I validate the header is "application/xml"(file:///Users/Seilkhan/Documents/API/src/test/resources/SingleResources.feature:23)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Validate the Get request for Single Resource Not Found" name="Validate Get request for Single Resource Not Found returns status code 404" time="0.474">
+        <system-out>
+            <![CDATA[Given constucted Http client with parameters................................passed
+And I set custom headers....................................................passed
+When the user sends Get request.............................................passed
+Then validates the status code is 404.......................................passed
+And I validate the header is "application/json".............................passed
+And I validate response contains attributes:................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Validate the Get request for List of Users" name="Validate Get request for List of Users returns status code 200" time="0.213">
+        <system-out>
+            <![CDATA[Given constucted Http client with parameters................................passed
+And I set custom headers....................................................passed
+When the user sends Get request.............................................passed
+Then validates the status code is 200.......................................passed
+And I validate the header is "application/json".............................passed
+And I validate response contains attributes:................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Validate the Get request for Single User Not Found" name="Validate Get request for Single User Not Found returns status code 404" time="0.48">
+        <system-out>
+            <![CDATA[Given constucted Http client with parameters................................passed
+And I set custom headers....................................................passed
+When the user sends Get request.............................................passed
+Then validates the status code is 404.......................................passed
+And I validate the header is "application/json".............................passed
+And I validate response contains attributes:................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
